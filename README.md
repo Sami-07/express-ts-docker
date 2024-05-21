@@ -14,8 +14,8 @@ Ensure you have the following installed on your system:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Sami-07/express-ts-docker.git
+cd express-ts-docker
 ``` 
 
 ### Step 2:  Build the Docker Image
