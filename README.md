@@ -25,7 +25,7 @@ docker build -t express-ts .
 
 ### Step 3: Run the Docker Container
 ```bash
-docker run -p 3000:3000 -e MONGO_URI=<your-mongo-db-cloud-uri> express-ts
+docker run -d -p 3000:3000 -e MONGO_URI="<your-mongo-db-cloud-uri>" express-ts
 ```
 
 ### Step 4: Access the application
