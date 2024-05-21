@@ -1,7 +1,7 @@
 # Express TypeScript App Docker Setup
 
 This repository contains an Express application written in TypeScript. Follow the steps below to set up and run the app using Docker.
-
+This also uses MongoDB Database. So you will need to pass in a MongoDB-Atlas cloud URI an as environment variable while instantiating a container.
 ## Prerequisites
 
 Ensure you have the following installed on your system:
