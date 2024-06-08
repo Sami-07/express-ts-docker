@@ -1,13 +1,17 @@
+# Use the official Node.js image.
 FROM node:20
 
-WORKDIR /app
+# Create and change to the app directory.
+WORKDIR /usr/src/app
 
+# Copy application dependency manifests to the container image.
+COPY package*.json ./
+
+# Install dependencies.
+RUN npm install
+
+# Copy local code to the container image.
 COPY . .
 
-RUN npm install
-RUN npm install mongoose
-RUN npm run build
-
-EXPOSE 3000
-
-CMD ["node", "dist/index.js"]
+# Run the web service on container startup.
+CMD [ "npm", "run", "dev" ]
